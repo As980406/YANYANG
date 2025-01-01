@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cubic+11:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 導覽列 -->
@@ -26,84 +24,154 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">首頁</a></li>
-            <li><a href="index.html#about">介紹我們</a></li>
+            <li><a href="about.html">介紹我們</a></li>
             <li><a href="products.html" class="active">商品介紹</a></li>
-            <li><a href="#classes">體驗課程</a></li>
-            <li><a href="#news">最新消息</a></li>
+            <li><a href="shop.html">購買商品</a></li>
+            <li><a href="classes.html">體驗課程</a></li>
+            <li><a href="index.html#news">最新消息</a></li>
             <li><a href="contact.html">聯繫我們</a></li>
         </ul>
     </nav>
 
-    <!-- 商品介紹主要內容 -->
-    <section class="products-section">
-        <!-- 1. 標準字及背景的全屏展示 -->
-        <div class="product-hero">
-            <div class="hero-content-wrapper">
-                <img src="images/product-hero.jpg" alt="永續生活咖啡禮盒" class="hero-image">
-                <div class="hero-overlay">
-                    <div class="hero-text-container">
-                        <h1 class="hero-title">永續生活咖啡禮盒</h1>
-                        <p class="hero-subtitle">咖啡Ｘ竹林 Ｘ永續<br>讓我們一起享受手作的純粹與自然</p>
+    <!-- 主要內容區域 -->
+    <main class="products-main">
+        <!-- Hero 區塊 -->
+        <section class="product-hero">
+            <div class="hero-content fade-in">
+                <h1>永續生活咖啡禮盒</h1>
+                <p>咖啡 × 竹林 × 永續</p>
+                <p>讓我們一起享受手作的純粹與自然</p>
+            </div>
+        </section>
+
+        <!-- 介紹區塊 -->
+        <section class="product-intro">
+            <div class="intro-left">
+                <img src="images/product-vertical.jpg" alt="產品介紹">
+            </div>
+            <div class="intro-right">
+                <div class="intro-content">
+                    <h2 class="intro-title">咖啡盒的理念</h2>
+                    <div class="accent-text">
+                        <p>返鄉一年了，每天與自然相伴，</p>
+                        <p>感受到的不只是寧靜，更是對永續的責任。</p>
+                        <p>在竹林中孕育出來的咖啡，</p>
+                        <p>咖啡也回饋於我們的土地，</p>
+                        <p>這是一場自然與人的共生對話，</p>
+                        <p>更是我們對家鄉的情感，以及對永續的承諾。</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- 2. 直式商品及商標照片區塊（視差滾動） -->
-        <div class="product-intro">
-            <div class="intro-image">
-                <img src="images/product-vertical.jpg" alt="商品展示" class="parallax-image">
-            </div>
-            <div class="intro-text">
-                <p class="intro-paragraph">
-                    返鄉一年了，每天與自然相伴，感受到的不只是寧靜，更是對永續的責任。在竹林中孕育出來的咖啡，咖啡也回饋於我們的土地，這是一場自然與人的共生對話，更是我們對家鄉的情感，以及對永續的承諾。
-                </p>
-            </div>
-        </div>
-
-        <!-- 3. 單獨商品大圖展示 -->
-        <div class="product-showcase">
-            <div class="showcase-content">
-                <img src="images/product-main.jpg" alt="商品展示" class="showcase-image">
-                <div class="showcase-text">
-                    <h2>永續生活咖啡禮盒</h2>
-                    <p>以咖啡為核心，運用咖啡的每個階段，為您帶來一場風味與手作的體驗。包裝嚴選環保油墨、可重複使用的玻璃上蓋，體現環保永續。</p>
+        <!-- 產品特色區塊 -->
+        <section class="product-feature">
+            <div class="feature-image">
+                <img src="images/product-main.jpg" alt="產品特色">
+                <div class="feature-text">
+                    <p>以咖啡為核心，運用咖啡的每個階段，<br>
+                    為您帶來一場風味與手作的體驗。<br>
+                    包裝嚴選環保油墨、只需改上蓋，<br>
+                    體現環保永續。</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- 4. 商品細節三連圖 -->
-        <div class="product-details">
-            <div class="detail-item">
-                <img src="images/detail1.jpg" alt="商品細節1" class="detail-image">
-                <p class="detail-text">咖啡豆細節</p>
-            </div>
-            <div class="detail-item">
-                <img src="images/detail2.jpg" alt="商品細節2" class="detail-image">
-                <p class="detail-text">包裝設計</p>
-            </div>
-            <div class="detail-item">
-                <img src="images/detail3.jpg" alt="商品細節3" class="detail-image">
-                <p class="detail-text">手工皂展示</p>
-            </div>
-        </div>
-
-        <!-- 5. 配圖文結尾 -->
-        <div class="product-footer">
-            <div class="footer-content">
-                <img src="images/product-footer.jpg" alt="意象圖" class="footer-image">
-                <div class="footer-text">
-                    <p>在家，手做一杯有溫度的咖啡</p>
-                    <div class="product-tags">
-                        <span>#咖啡</span>
-                        <span>#嫣泱咖啡</span>
-                        <span>#桃園復興</span>
-                        <span>#永續生活</span>
+        <!-- 產品細節區塊 -->
+        <section class="product-details">
+            <h2 class="section-title">包裝盒的細節</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <img src="images/detail1.jpg" alt="細節1" class="hover-zoom">
+                    <div class="detail-overlay">
+                        <p>精緻包裝</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img src="images/detail2.jpg" alt="細節2" class="hover-zoom">
+                    <div class="detail-overlay">
+                        <p>環保材質</p>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img src="images/detail3.jpg" alt="細節3" class="hover-zoom">
+                    <div class="detail-overlay">
+                        <p>細緻工藝</p>
                     </div>
                 </div>
             </div>
+            
+            <div class="product-content">
+                <h3>產品內容</h3>
+                <div class="content-text">
+                    <p class="coffee-intro">
+                        咖啡豆：選用桃園復興自家咖啡，從不經他人之手，親手製成每一道工序。<br><br>
+                        六大處理法：品嚐時能感受到帶有一絲茶感，尾韻帶有甜感充足的回甘。
+                    </p>
+                    <p class="soap-intro">
+                        咖啡手工皂：與屏東當地手工皂師合作，使用自家咖啡渣製成的手工皂，<br>
+                        不添加人工香精、化學合成。<br><br>
+                        使用溫和及天然的成分，呵護您的肌膚。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 頁尾圖片區塊 -->
+        <section class="product-footer">
+            <div class="footer-image">
+                <img src="images/product-footer.jpg" alt="在家，手做一杯有溫度的咖啡">
+                <div class="tags-container">
+                    <p class="footer-text">在家，手做一杯有溫度的咖啡</p>
+                    <div class="tags">
+                        <span class="tag">#咖啡</span>
+                        <span class="tag">#嫣泱咖啡</span>
+                        <span class="tag">#桃園復興</span>
+                        <span class="tag">#種植咖啡</span>
+                        <span class="tag">#自家烘培咖啡</span>
+                        <span class="tag">#taiwan</span>
+                        <span class="tag">#禮盒</span>
+                        <span class="tag">#咖啡禮盒</span>
+                        <span class="tag">#臺灣咖啡</span>
+                        <span class="tag">#食農教育</span>
+                        <span class="tag">#青返鄉</span>
+                        <span class="tag">#青農日常</span>
+                        <span class="tag">#零浪費</span>
+                        <span class="tag">#永續</span>
+                        <span class="tag">#永續生活</span>
+                        <span class="tag">#SDGs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="footer-logo">
+                <p>用心栽種每一顆咖啡豆，<br>用愛澆灌每一杯咖啡。</p>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡資訊</h4>
+                <p>地址：336026桃園市復興區義盛9鄰7號</p>
+                <p>電話：0977-278-345</p>
+                <p>信箱：contact@yenyang.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>社群媒體</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yanyang_coffee/" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Line</a>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="footer-bottom">
+            <p>&copy; 2024 嫣泱咖啡 All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購買商品 | 嫣泱咖啡</title>
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cubic+11:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="logo-img">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">介紹我們</a></li>
+            <li><a href="products.html">商品介紹</a></li>
+            <li><a href="shop.html" class="active">購買商品</a></li>
+            <li><a href="classes.html">體驗課程</a></li>
+            <li><a href="index.html#news">最新消息</a></li>
+            <li><a href="contact.html">聯繫我們</a></li>
+        </ul>
+    </nav>
+
+    <!-- 商品輪播區塊 -->
+    <section class="slider-section shop-slider-section">
+        <div class="slider-container">
+            <div class="slide" data-index="1">
+                <img src="images/shop-banner-1.jpg" alt="商品展示1">
+            </div>
+            <div class="slide" data-index="2">
+                <img src="images/shop-banner-2.jpg" alt="商品展示2">
+            </div>
+            <div class="slide" data-index="3">
+                <img src="images/shop-banner-3.jpg" alt="商品展示3">
+            </div>
+        </div>
+
+        <!-- 導航指示器 -->
+        <div class="slider-nav">
+            <button class="nav-dot" data-index="1"></button>
+            <button class="nav-dot" data-index="2"></button>
+            <button class="nav-dot" data-index="3"></button>
+        </div>
+    </section>
+
+    <!-- 商品列表 -->
+    <section class="shop-section">
+        <div class="shop-container">
+            <!-- 限時優惠標題 -->
+            <div class="promo-banner">
+                <h2 class="promo-title">\ \ 限時優惠・蛇年送禮 / /</h2>
+                <p class="promo-subtitle">永續生活咖啡禮盒預購 ＿ 即享時光禮盒、雙享啡刻禮盒（預計01/06起發貨）</p>
+                <p class="promo-highlight">禮盒期間限定＿金蛇醇香配方豆</p>
+                <p class="promo-item">即享時光禮盒： 12入耳掛咖啡禮盒 優惠價$700元（原價$840/盒）</p>
+                <p class="promo-item">雙享啡刻禮盒： 1/4磅 & 6入耳掛咖啡禮盒 優惠價$900元（原價$1070/盒）</p>
+                <p class="promo-period">預購優惠，即日起～1/4止</p>
+            </div>
+
+            <div class="shop-grid">
+                <!-- #29 厭氧日曬 淺培 -->
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="images/product-29.jpg" alt="#29 厭氧日曬 淺培" class="main-image" data-default="images/product-29.jpg">
+                    </div>
+                    <div class="shop-info">
+                        <h3>#29 厭氧日曬 淺培</h3>
+                        <p class="shop-description">商品描述...</p>
+                        
+                        <!-- 商品規格選項 -->
+                        <div class="product-options">
+                            <div class="option-item" data-image="images/product-29-1.jpg">
+                                <h4>1/4磅 (113g)</h4>
+                                <p class="price">NT$ 750</p>
+                                <button class="shop-btn">購買</button>
+                            </div>
+                            
+                            <div class="option-item" data-image="images/product-29-2.jpg">
+                                <h4>半磅 (226g)</h4>
+                                <p class="price">NT$ 1,400</p>
+                                <button class="shop-btn">購買</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- #30 水洗 淺培 -->
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="images/product-30.jpg" alt="#30 水洗 淺培" class="main-image" data-default="images/product-30.jpg">
+                    </div>
+                    <div class="shop-info">
+                        <h3>#30 水洗 淺培</h3>
+                        <p class="shop-description">商品描述...</p>
+                        
+                        <!-- 商品規格選項 -->
+                        <div class="product-options">
+                            <div class="option-item" data-image="images/product-30-1.jpg">
+                                <h4>1/4磅 (113g)</h4>
+                                <p class="price">NT$ 550</p>
+                                <button class="shop-btn">購買</button>
+                            </div>
+                            
+                            <div class="option-item" data-image="images/product-30-2.jpg">
+                                <h4>半磅 (226g)</h4>
+                                <p class="price">NT$ 1,000</p>
+                                <button class="shop-btn">購買</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 限定_即享時光禮盒 -->
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="images/product-gift1.jpg" alt="限定_即享時光禮盒">
+                    </div>
+                    <div class="shop-info">
+                        <h3>限定_即享時光禮盒</h3>
+                        <p class="shop-description">耳掛6包＋耳掛6包（120g）</p>
+                        <div class="price-container">
+                            <p class="original-price">原價 NT$ 840</p>
+                            <p class="sale-price">優惠價 NT$ 700</p>
+                        </div>
+                        <button class="shop-btn">立即預購</button>
+                    </div>
+                </div>
+
+                <!-- 限定_雙響啡刻禮盒 -->
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="images/product-gift2.jpg" alt="限定_雙響啡刻禮盒">
+                    </div>
+                    <div class="shop-info">
+                        <h3>限定_雙響啡刻禮盒</h3>
+                        <p class="shop-description">1/4磅 & 6入耳掛咖啡禮盒</p>
+                        <div class="price-container">
+                            <p class="original-price">原價 NT$ 1,070</p>
+                            <p class="sale-price">優惠價 NT$ 900</p>
+                        </div>
+                        <button class="shop-btn">立即預購</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js?v=1.0"></script>
+</body>
+</html> 

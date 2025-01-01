@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯繫我們 | 嫣泱咖啡</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cubic+11:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="logo-img">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">介紹我們</a></li>
+            <li><a href="products.html">商品介紹</a></li>
+            <li><a href="shop.html">購買商品</a></li>
+            <li><a href="classes.html">體驗課程</a></li>
+            <li><a href="index.html#news">最新消息</a></li>
+            <li><a href="contact.html" class="active">聯繫我們</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主要內容區域 -->
+    <main class="contact-main">
+        <!-- Hero 區塊 - 簡化版本 -->
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1>聯繫我們</h1>
+            </div>
+        </section>
+
+        <!-- 主要資訊區塊 -->
+        <section class="contact-grid-section">
+            <div class="contact-grid-container">
+                <!-- 左側資訊 -->
+                <div class="contact-info-side">
+                    <div class="info-block">
+                        <h2>聯絡資訊</h2>
+                        <div class="info-item">
+                            <span class="info-label">電話</span>
+                            <div class="info-content">
+                                <p>0977-278-345</p>
+                                <button class="copy-btn" data-info="0977278345">複製</button>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">信箱</span>
+                            <div class="info-content">
+                                <p>contact@yenyang.com</p>
+                                <button class="copy-btn" data-info="contact@yenyang.com">複製</button>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">地址</span>
+                            <div class="info-content">
+                                <p>336026桃園市復興區義盛9鄰7號</p>
+                                <button class="copy-btn" data-info="336026桃園市復興區義盛9鄰7號">複製</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h2>營業時間</h2>
+                        <p>週一至週日：08:00 - 17:00</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h2>社群媒體</h2>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/yanyang_coffee/" target="_blank">Instagram</a>
+                            <a href="https://www.facebook.com/p/嫣泱咖啡-61553496663080/" target="_blank">Facebook</a>
+                            <a href="https://myship.7-11.com.tw/general/detail/GM2312138168435" target="_blank">賣貨便</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右側表單 -->
+                <div class="contact-form-side">
+                    <form id="contactForm" class="contact-form">
+                        <h2>聯繫表單</h2>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">姓名</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">信箱</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">電話</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">主旨</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">訊息內容</label>
+                        </div>
+                        <button type="submit" class="submit-btn">送出訊息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地圖區塊 -->
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="footer-logo">
+                <p>用心栽種每顆咖啡豆，<br>用愛澆灌每一杯咖啡。</p>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡資訊</h4>
+                <p>地址：336026桃園市復興區義盛9鄰7號</p>
+                <p>電話：0977-278-345</p>
+                <p>信箱：contact@yenyang.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>社媒體</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yanyang_coffee/" class="social-link">Instagram</a>
+                    <a href="https://www.facebook.com/p/嫣泱咖啡-61553496663080/" class="social-link">Facebook</a>
+                    <a href="https://myship.7-11.com.tw/general/detail/GM2312138168435" class="social-link">賣貨便</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 嫣泱咖啡 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html> 

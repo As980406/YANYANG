@@ -17,7 +17,9 @@
     <!-- 導覽列 -->
     <nav class="navbar">
         <div class="nav-logo">
-            <img src="images/logo.png" alt="嫣泱咖啡" class="logo-img">
+            <a href="index.html">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="logo-img">
+            </a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -26,9 +28,10 @@
         </div>
         <ul class="nav-links">
             <li><a href="#home" class="active">首頁</a></li>
-            <li><a href="#about">介紹我們</a></li>
+            <li><a href="about.html">介紹我們</a></li>
             <li><a href="products.html">商品介紹</a></li>
-            <li><a href="#classes">體驗課程</a></li>
+            <li><a href="shop.html">購買商品</a></li>
+            <li><a href="classes.html">體驗課程</a></li>
             <li><a href="#news">最新消息</a></li>
             <li><a href="contact.html">聯繫我們</a></li>
         </ul>
@@ -40,37 +43,72 @@
             <h1 class="main-title">在家，手做一杯有溫度的咖啡。</h1>
             <p class="subtitle">家，是結<span style="color: #EA501A;">果</span>之地</p>
             <div class="cta-buttons">
-                <a href="#about" class="btn primary-btn">介紹我們</a>
-                <a href="#about" class="btn secondary-btn">了解更多</a>
+                <a href="about.html" class="btn primary-btn">介紹我們</a>
+                <a href="#story" class="btn secondary-btn">了解更多</a>
             </div>
         </div>
     </main>
 
-    <!-- 添加滾動提示 -->
-    <div class="scroll-indicator">
-        <div class="mouse">
-            <div class="wheel"></div>
-        </div>
-        <div class="arrow"></div>
-    </div>
-
-    <!-- 在 hero section 後面添加 -->
-    <section id="about" class="about-section">
-        <div class="about-background"></div>
-        <div class="about-container">
-            <div class="about-content">
-                <h2 class="section-title">關於嫣泱咖啡</h2>
-                <div class="about-text">
-                    <p>在這片屬於家族的土地上，從父親開始種下第一棵喜愛的咖啡樹、再到數千顆的咖啡園，後來凝聚一家人，讓身為兒女的我們陸續返鄉回到山林裡，從咖啡種植、採收、後製、烘焙、手沖、經營管理...，共同用雙手摸索、堅持有機種植。</p>
-                    <p>秉持著用心做咖啡，彷彿家人彼此間的悉心照料。期許咖啡如家族般不斷擴大，傳承給未來的每一代。</p>
-                    <p>我們對於咖啡的探索，一切都是從「家」開始，因此使用家人的名字作為品牌名 -「嫣泱咖啡」。在臺灣，在山中，在家裡，用手打造最溫暖的咖啡給大家。</p>
+    <!-- 首頁輪播區塊 -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slide" data-index="1">
+                <img src="images/slider/coffee-making.jpg" alt="咖啡製作">
+                <div class="slide-content">
+                    <h2>種植咖啡</h2>
+                    <p>與土地共生</p>
                 </div>
             </div>
-            <div class="about-image">
-                <img src="images/about-coffee.jpg" alt="咖啡製作過程" class="about-img">
+            <div class="slide" data-index="2">
+                <img src="images/slider/coffee-beans.jpg" alt="咖啡豆">
+                <div class="slide-content">
+                    <h2>自家烘培</h2>
+                    <p>循環利用，永續環保</p>
+                </div>
+            </div>
+            <div class="slide" data-index="3">
+                <img src="images/slider/coffee-brew.jpg" alt="手沖咖啡">
+                <div class="slide-content">
+                    <h2>青農日常</h2>
+                    <p>品味自然的甘甜</p>
+                </div>
             </div>
         </div>
+
+        <!-- 導航指示器 -->
+        <div class="slider-nav">
+            <button class="nav-dot" data-index="1"></button>
+            <button class="nav-dot" data-index="2"></button>
+            <button class="nav-dot" data-index="3"></button>
+        </div>
     </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/logo.png" alt="嫣泱咖啡" class="footer-logo">
+                <p>用心栽種每一顆咖啡豆，<br>用愛澆灌每一杯咖啡。</p>
+            </div>
+            <div class="footer-section">
+                <h4>聯絡資訊</h4>
+                <p>地址：336026桃園市復興區義盛9鄰7號</p>
+                <p>電話：0977-278-345</p>
+                <p>信箱：contact@yenyang.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>社群媒體</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yanyang_coffee/" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 嫣泱咖啡 All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
